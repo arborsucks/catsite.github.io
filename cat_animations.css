@@ -1,0 +1,24 @@
+/* Move up animation */
+#mrBImage {
+  position: relative;
+  opacity: 0; /* Initial opacity set to 0 for fade-in effect */
+  animation: floatBubble 2s normal ease-out, fadein 4s forwards; /* Combining animations */
+}
+
+@keyframes floatBubble {
+  0% {
+    top: 500px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+/* Fade in */
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
